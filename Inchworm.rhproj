@@ -8,7 +8,7 @@
   "id": "3162308b-a228-431a-831e-a6ba6e442be3",
   "identity": {
     "name": "Inchworm",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "publisher": {
       "email": "ruifsdmoreira@gmail.com",
       "name": "Rui Moreira"
@@ -50,7 +50,7 @@
     }
   },
   "settings": {
-    "buildPath": "file:///C:/Users/Rui Moreira/Desktop/Inchworm",
+    "buildPath": "file:///C:/Users/Rui Moreira/Desktop/Inchworm_Project/build",
     "buildTarget": {
       "host": {
         "name": "Rhino3D",

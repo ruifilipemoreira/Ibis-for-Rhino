@@ -76,16 +76,16 @@ class InteractiveScaleForm(forms.Dialog):
 
         self.output_lbl = forms.Label()
         self.output_lbl.Text = "Ratio 1:0 | Real: 0 m | Model: 0 mm"
-        self.output_lbl.Font = drawing.Font("Segoe UI", 10, drawing.FontStyle.Bold)
+        self.output_lbl.Font = drawing.SystemFonts.Bold(10)
 
         lbl_instr1 = forms.Label()
         lbl_instr1.Text = "Instructions: Set Ratio and modify Real or Model lengths to calculate."
-        lbl_instr1.Font = drawing.Font("Segoe UI", 8.5, drawing.FontStyle.Italic)
+        lbl_instr1.Font = drawing.SystemFonts.Default()
         lbl_instr1.TextColor = drawing.Colors.Gray
 
         lbl_instr2 = forms.Label()
         lbl_instr2.Text = "Click 'Copy & Log' to send the result to the clipboard and command line."
-        lbl_instr2.Font = drawing.Font("Segoe UI", 8.5, drawing.FontStyle.Italic)
+        lbl_instr2.Font = drawing.SystemFonts.Default()
         lbl_instr2.TextColor = drawing.Colors.Gray
         
         layout = forms.PixelLayout()
@@ -170,6 +170,9 @@ class InteractiveScaleForm(forms.Dialog):
 
 if __name__ == "__main__":
     dialog = InteractiveScaleForm()
+    
+    dialog.Topmost = True 
+    
     dialog.ShowModal(Rhino.UI.RhinoEtoApp.MainWindow)
     
     if hasattr(dialog, 'final_output') and dialog.final_output:
