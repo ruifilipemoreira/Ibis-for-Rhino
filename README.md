@@ -60,21 +60,6 @@ closing it.
 
 ---
 
-## Migrating from Inchworm
-
-Ibis replaces Inchworm entirely. The Scale tool works the same way with the
-same logic — your workflow is unchanged. Inchworm can be uninstalled via the
-Rhino Package Manager once Ibis is installed.
-
----
-
-## Contributing
-
-Bug reports and feature requests are welcome via
-[GitHub Issues](https://github.com/ruimoreira/ibis/issues).
-
----
-
 ## Support
 
 Ibis is free and open source. If it saves you time on a project, you can
