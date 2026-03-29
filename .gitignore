@@ -1,5 +1,4 @@
 build/
-assets/
 
 __pycache__/
 *.pyc
